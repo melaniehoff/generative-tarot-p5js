@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+    console.log( "ready!" );
 
 let cards = [
 // structure:---->  console.log(cards[0].card); = the fool
@@ -135,6 +137,32 @@ let cards = [
   }
 ];
 
+// Shuffle array
+const shuffledCards = shuffle(cards);
+
+// Get sub-array of first 3 elements after shuffled
+let shuffledThree = shuffledCards.slice(0, 3);
+
+//Print the three pulled cards
+// console.log(shuffledThree);
+console.log(shuffledThree[0].card);
+console.log(shuffledThree[1].card);
+console.log(shuffledThree[2].card);
+
+//Show the iframes
+loadIframe("one", shuffledThree[0].sketch);
+loadIframe("two", shuffledThree[1].sketch);
+loadIframe("three", shuffledThree[2].sketch);
+
+
+
+
+}); //END OF DOC READY
+
+
+
+
+//FUNCTIONS
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -155,14 +183,9 @@ function shuffle(array) {
   return array;
 }
 
-
-// Shuffle array
-const shuffledCards = shuffle(cards);
-
-// Get sub-array of first n elements after shuffled
-let shuffledThree = shuffledCards.slice(0, 3);
-console.log(shuffledThree);
-
+function loader() {
+  setTimeout(showPage, 500);
+}
 
 function loadIframe(iframeName, url) {
     var $iframe = $('#' + iframeName);
@@ -173,23 +196,9 @@ function loadIframe(iframeName, url) {
     return true;
 }
 
-console.log(shuffledThree[0].card);
-console.log(shuffledThree[1].card);
-console.log(shuffledThree[2].card);
-
-loadIframe("one", shuffledThree[0].sketch);
-loadIframe("two", shuffledThree[1].sketch);
-loadIframe("three", shuffledThree[2].sketch);
-
-
-
-function loader() {
-  setTimeout(showPage, 3000);
-}
-
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("pulled-cards").style.display = "flex";
-	document.getElementById("ppf").style.display = "flex";
-	document.getElementById("students").style.display = "block";
+	// document.getElementById("ppf").style.display = "flex";
+	// document.getElementById("students").style.display = "block";
 }
