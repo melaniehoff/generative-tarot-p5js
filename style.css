@@ -1,0 +1,102 @@
+
+
+@font-face {
+  font-family: 'Steps-Mono';
+  src: url('fonts/steps-mono.otf') format('otf');
+  src: url('fonts/steps-mono.eot'); /* IE9 Compat Modes */
+  src: url('fonts/steps-mono-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/steps-mono-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/steps-mono.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+
+body {
+	font-family: 'Steps-Mono';
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+  background-color: #000000;
+	color: rgba(255,255,255,.3);
+	text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+
+}
+
+h1 {
+	font-size: 3em;
+	margin-top: 1em;
+}
+.container {
+overflow: hidden;
+
+}
+
+#reference {
+  position: relative;
+  text-shadow: none;
+bottom: -990px;
+margin-left: 3em;
+}
+
+#reference a {
+  color: violet;
+}
+
+#reference a: visited {
+  color: violet;
+}
+
+
+#pulled-cards{
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+	top: -7%;
+  width: 100%;
+	display: none;
+	transform: scale(0.5);
+	justify-content: center;
+}
+
+iframe {
+    width: 800px;
+    height: 1245px;
+		margin-bottom: -675px;
+    border: none;
+}
+
+.iframe-container {
+	margin: 50px;
+}
+
+#loader {
+	margin-top: 6em;
+  width: 300px;
+}
+
+#students {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	margin: 1em;
+}
+
+#ppf {
+	display: none;
+	border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	top: 81%;
+	text-align: center;
+}
+
+.ppf {
+	text-align: center;
+	font-size: 1.5em;
+    margin-left: 193px;
+    margin-right: 193px;
+		margin-top: 150px;
+}
