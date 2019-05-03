@@ -18,36 +18,22 @@ body {
   text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5); */
 }
 
-h1 {
+/* h1 {
   font-size: 3em;
   margin-top: 1em;
-}
+} */
 
 .container {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-#reference {
-  position: relative;
-  text-shadow: none;
-  bottom: -990px;
-  margin-left: 3em;
-}
-
-#reference a {
-  color: violet;
-}
-
-#reference a: visited {
-  color: violet;
-}
 
 #pulled-cards {
   border: 0;
   height: 100%;
   left: 0;
   position: absolute;
-  top: -10%;
+  top: -16%;
   width: 100%;
   display: none;
   transform: scale(0.45);
@@ -63,6 +49,15 @@ iframe {
 
 .iframe-container {
   margin: 6em;
+  position: relative;
+}
+
+.title-link {
+  position: absolute;
+  top: 178%;
+  text-align: center;
+  width: 800px;
+  font-size: 3em;
 }
 
 #loader {
@@ -70,29 +65,30 @@ iframe {
   width: 300px;
 }
 
-#students {
-  display: none;
-  position: fixed;
-  bottom: 0px;
-  margin: 1em;
+a {
+  color: black;
 }
 
-#ppf {
-  display: none;
-  border: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  justify-content: center;
-  top: 81%;
-  text-align: center;
+a:visited {
+  color: black;
+}
+a:hover {
+  color: violet;
 }
 
-.ppf {
-  text-align: center;
-  font-size: 1.5em;
-  margin-left: 193px;
-  margin-right: 193px;
-  margin-top: 150px;
+
+
+/* #reference a {
+  color: violet;
 }
+
+#reference a: visited {
+  color: violet;
+}
+
+#reference {
+  position: relative;
+  text-shadow: none;
+  bottom: -990px;
+  margin-left: 3em;
+} */

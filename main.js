@@ -132,7 +132,7 @@ let cards = [
   {
     card: "The World",
     website: "http://artfiles.rutgers.edu/~noor@art.rutgers.edu/tarot",
-    sketch: "https://editor.p5js.org/jsn65/embed/DL8dGzrOX",
+    sketch: "https://editor.p5js.org/melaniehoff/embed/oUL56jqc1",
     interaction: "🐁"
   }
 ];
@@ -149,10 +149,20 @@ console.log(shuffledThree[0].card);
 console.log(shuffledThree[1].card);
 console.log(shuffledThree[2].card);
 
+$("#title-1").attr("href", shuffledThree[0].website);
+$("#title-1").text(shuffledThree[0].card);
+
+$("#title-2").attr("href", shuffledThree[1].website);
+$("#title-2").text(shuffledThree[1].card);
+
+$("#title-3").attr("href", shuffledThree[2].website);
+$("#title-3").text(shuffledThree[2].card);
+
 //Show the iframes
 loadIframe("one", shuffledThree[0].sketch);
 loadIframe("two", shuffledThree[1].sketch);
 loadIframe("three", shuffledThree[2].sketch);
+
 
 
 
