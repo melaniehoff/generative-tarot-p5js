@@ -2,3 +2,5 @@
 *.DS_Store
 extra.html
 config.codekit3
+test*
+*-min*
