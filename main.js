@@ -13,37 +13,37 @@ let cards = [
     card: "The Magician",
     website: "http://artfiles.rutgers.edu/~manansala@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/tXz9E7jd0",
-    interaction: "<span>🐁 <img class='click' src='click.png'> A B C D E</span>"
+    interaction: "<span>🐁 <img class='click' src='assets/click.png'> A B C D E</span>"
   },
   {
     card: "The High Priestess",
     website: "http://artfiles.rutgers.edu/~farah@art.rutgers.edu/tarot",
     sketch: "https://editor.p5js.org/melaniehoff/embed/cbjTgdqFM",
-    interaction: "<img class='click' src='click.png'>"
+    interaction: "<img class='click' src='assets/click.png'>"
   },
   {
     card: "The Empress",
     website: "http://artfiles.rutgers.edu/~feerrar@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/pKXvxBY8f",
-    interaction: "<img class='click' src='click.png'>"
+    interaction: "<img class='click' src='assets/click.png'>"
   },
   {
     card: "The Emperor",
     website: "", //TODO
     sketch: "https://editor.p5js.org/melaniehoff/embed/FUKeNgxvC",
-    interaction: "<img class='click' src='click.png'>"
+    interaction: "<img class='click' src='assets/click.png'>"
   },
   {
     card: "The Hierophant", //TODO
     website: "",
     sketch: "https://editor.p5js.org/melaniehoff/embed/OQ7N_j6H-",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "The Lovers", //TODO
     website: "http://www.aeclectic.net/tarot/learn/meanings/lovers.shtml",
     sketch: "https://editor.p5js.org/melaniehoff/embed/x_SJWRVU9",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "The Chariot",
@@ -55,31 +55,31 @@ let cards = [
     card: "Strength",
     website: "http://artfiles.rutgers.edu/~wangy@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/r3eekK1O0",
-    interaction: "<span>🐁 <img class='click' src='click.png'></span>"
+    interaction: "<span>🐁 <img class='click' src='assets/click.png'></span>"
   },
   {
     card: "The Hermit", //TODO
     website: "",
     sketch: "https://editor.p5js.org/melaniehoff/embed/54F1vJ0ZK",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "Wheel of Fortune", //TODO
     website: "",
     sketch: "https://editor.p5js.org/melaniehoff/embed/NnQcPsqoS",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "Justice",
     website: "http://artfiles.rutgers.edu/~finn@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/8gZLw_VYr",
-    interaction: "<span>🐁 <img class='click' src='click.png'></span>"
+    interaction: "<span>🐁 <img class='click' src='assets/click.png'></span>"
   },
   {
     card: "The Hanged Man",
     website: "http://artfiles.rutgers.edu/~quayenortey@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/BwG_og7ui",
-    interaction: "<img class='click' src='click.png'>"
+    interaction: "<img class='click' src='assets/click.png'>"
   },
   {
     card: "Death",
@@ -91,43 +91,43 @@ let cards = [
     card: "Temperance", //TODO
     website: "",
     sketch: "https://editor.p5js.org/melaniehoff/embed/JLT7WHVLC",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "The Devil", //TODO
     website: "",
     sketch: "https://editor.p5js.org/melaniehoff/embed/MrVK5mCU5",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "The Tower",
     website: "http://artfiles.rutgers.edu/~lozano@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/GFKaSQWhC",
-    interaction: "<span>🐁 <img class='click' src='click.png'> <img class='click' src='key.png'></span>"
+    interaction: "<span>🐁 <img class='click' src='assets/click.png'> <img class='click' src='assets/key.png'></span>"
   },
   {
     card: "The Star",
     website: "http://artfiles.rutgers.edu/~mi@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/wS2zJaZXC",
-    interaction: "<span>🐁 <img class='click' src='key.png'></span>"
+    interaction: "<span>🐁 <img class='click' src='assets/key.png'></span>"
   },
   {
     card: "The Moon",
     website: "http://artfiles.rutgers.edu/~leonard@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/9HQ_TLpGg",
-    interaction: "<span>🐁 <img class='click' src='click.png'> <img class='click' src='key.png'></span>"
+    interaction: "<span>🐁 <img class='click' src='assets/click.png'> <img class='click' src='assets/key.png'></span>"
   },
   {
     card: "The Sun",
     website: "http://artfiles.rutgers.edu/~espinoza@art.rutgers.edu/tarot/",
     sketch: "https://editor.p5js.org/melaniehoff/embed/v1YzgP6-u",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "Judgement", //TODO
     website: "",
     sketch: "https://editor.p5js.org/valnicloz/embed/Km8e1aVYI",
-    interaction: '\u00A0'
+    interaction: "<img class='click' src='assets/space.png'>"
   },
   {
     card: "The World",

@@ -8,29 +8,60 @@
   url('fonts/steps-mono.ttf') format('truetype')/* Safari, Android, iOS */
 }
 
-body {
-  font-family: 'Steps-Mono';
-  /* font-family: 'Roboto Mono', monospace; */
+@font-face {
+  font-family: 'Happy';
+  src: url('fonts-happy/happy-times-at-the-ikob.otf') format('otf');
+  /* IE9 Compat Modes */
+  src: url('fonts-happy/happy-times-at-the-ikob-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts-happy/Avara-Bold_web.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts-happy/Avara-Bold_web.ttf') format('truetype')/* Safari, Android, iOS */
+}
 
+@font-face {
+  font-family: 'Avara-Bold';
+  src: url('fonts-avara/Avara-Bold_web.otf') format('otf');
+  /* IE9 Compat Modes */
+  src: url('fonts-avara/Avara-Bold_web.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts-avara/happy-times-at-the-ikob-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts-avara/happy-times-at-the-ikob.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  /* font-family: 'Steps-Mono'; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Avara-Bold';
   margin: 0px;
   padding: 0px;
-    height: 3177px;
+  height: 2990px;
   /* background-color: #000000; */
   background-image: linear-gradient(#2e2e2e, black);
   color: white;
+
+  /* background-image: linear-gradient(#d6c7c5, black); */
   /* color: rgba(255,255,255,.3);
   text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5); */
 }
 
 h1 {
-  color: grey;
-  font-size: 2.5em;
+  font-size: 3em;
   margin-top: 1em;
   font-weight: 400;
+  /* color: grey; */
+  color: rgba(255,255,255,.5);
+  text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
+  /* color: rgba(255,255,255,.5); */
+  /* text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5); */
 }
 
 h1:hover {
-  text-decoration: underline;
+  color: white;
+      /* text-shadow: 0 0 15px rgba(255, 252, 0, 0.5), 0 0 10px rgba(255, 255, 255, .5);
+      text-decoration: none !important; */
+}
+
+#scrollLink:hover {
+  text-decoration: none !important;
 }
 
 .container {
@@ -62,17 +93,24 @@ iframe {
 }
 
 .title-link {
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Open Sans', sans-serif !important;
+  /* font-family: 'Happy'; */
+
   position: relative;
   text-align: center;
   font-size: 3em;
   display: inline;
   top: 10%;
-  color: grey !important;
   text-decoration: none;
+
 }
 
 .interaction {
-  font-size: 3em;
+  font-size: 4em;
+  border-bottom: double;
+  padding: .3em;
+
 }
 
 
@@ -85,7 +123,7 @@ iframe {
   position: absolute;
   top: 1400px;
 width: 903px;
-  padding-top: 3em;
+  padding-top: 0em;
   text-align: center;
   /* border-style: solid; */
   /* border-width: 5px; */
@@ -101,33 +139,46 @@ width: 903px;
 }
 
 a {
-  color: white;
+  color: grey;
+  text-decoration: none !important;
 }
 
 a:visited {
-  color: white;
+  color: grey;
 }
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline !important; */
+  color: white;
 }
 
 #about {
-  font-size: 2em;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Open Sans', sans-serif;
+
   border: solid;
   padding: 2em;
-border-radius: 40px;
-}
-
-#students {
-  font-weight: 900;
+  border-radius: 40px;
+  font-size: 1.5em;
+    margin-top: 2em;
 }
 
 .students-resources {
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Open Sans', sans-serif;
+
   border: solid;
   padding: 2em;
-border-radius: 40px;
-font-size: 1.5em;
-margin-bottom: 5em;
+  border-radius: 40px;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.bottom-header {
+  font-weight: 900;
+  /* font-family: 'Steps-Mono'; */
+  font-family: 'Avara-Bold';
+  /* color: rgba(255,255,255,.5);
+  text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5); */
 }
 
 

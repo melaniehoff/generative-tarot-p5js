@@ -1,6 +1,6 @@
 
 *.DS_Store
-extra.html
+extra*
 config.codekit3
 test*
 *-min*
