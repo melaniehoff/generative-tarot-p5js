@@ -48,16 +48,15 @@ h1 {
   margin-top: 1em;
   font-weight: 400;
   /* color: grey; */
-  color: rgba(255,255,255,.5);
-  text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5);
-  /* color: rgba(255,255,255,.5); */
-  /* text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5); */
+  color: white;
+    /* color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 0 15px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .5); */
+
 }
 
 h1:hover {
   color: white;
-      /* text-shadow: 0 0 15px rgba(255, 252, 0, 0.5), 0 0 10px rgba(255, 255, 255, .5);
-      text-decoration: none !important; */
+  text-shadow: 0 0 15px rgba(255, 255, 255, .8), 0 0 10px rgba(255, 255, 255, .5);
 }
 
 #scrollLink:hover {
@@ -125,6 +124,7 @@ iframe {
 width: 903px;
   padding-top: 0em;
   text-align: center;
+  border-style: solid !important;
   /* border-style: solid; */
   /* border-width: 5px; */
 }
@@ -155,9 +155,9 @@ a:hover {
   /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Open Sans', sans-serif;
 
-  border: solid;
+  /* border: solid; */
   padding: 2em;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   font-size: 1.5em;
     margin-top: 2em;
 }
@@ -165,10 +165,10 @@ a:hover {
 .students-resources {
   /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Open Sans', sans-serif;
-
-  border: solid;
+  /* border: solid; */
   padding: 2em;
-  border-radius: 40px;
+  padding-top: 0;
+  /* border-radius: 40px; */
   font-size: 1.5em;
   margin-bottom: 2em;
 }
