@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -13,115 +13,120 @@
 
 <body onload="loader();">
 	<div id="fake-body">
-	<!-- //TODO PUT BACK LOADER -->
-	<!-- <body> -->
-	<center>
-		<!-- //TODO title?? -->
+		<center>
 
-			<h1>Generative Tarot</h1>
+			<h1 id="h1-big">Generative Tarot</h1>
 
 
-		<div id="top-buttons">
-		<a id="scrollLink">About</a><a href="">Pull Again</a>
-		</div>
+			<div id="top-buttons">
+				<a id="scrollLink">About</a><a href="">Pull Again</a>
+			</div>
 
-		<img id="loader" src="assets/tarot-v2-sm.gif">
-	</center>
-
-	<!-- <div class="container"> -->
+			<img id="loader" src="assets/tarot-v2-sm.gif">
+		</center>
 
 
-	<div id="pulled-cards">
+		<div id="pulled-cards">
 
-		<div class="tarot-container">
-			<div class="iframe-container">
-				<iframe id="one" src="" scrolling="no">
+			<div class="tarot-container">
+				<div class="iframe-container">
+					<iframe id="one" src="" scrolling="no">
     </iframe>
+				</div>
+				<div class="info">
+					<p class="interaction">
+						<span id="interaction-1"></span>
+						<span class='tooltiptext' id="interactionText-1"></span>
+					</p>
+					<a class="title-link" id="title-1" target="_blank">TEST</a>
+					<br>
+					<a class="code-link" id="code-1" target="_blank">code</a>
+				</div>
 			</div>
-			<div class="info">
-				<p class="interaction" id="interaction-1">TEST</p>
-				<a class="title-link" id="title-1" target="_blank">TEST</a>
-				<br>
-				<a class="code-link" id="code-1" target="_blank">code</a>
-			</div>
-		</div>
 
 
-		<div class="tarot-container">
-			<div class="iframe-container">
-				<iframe id="two" src="" scrolling="no">
+			<div class="tarot-container">
+				<div class="iframe-container">
+					<iframe id="two" src="" scrolling="no">
     </iframe>
+				</div>
+				<div class="info">
+					<p class="interaction">
+						<span id="interaction-2"></span>
+						<span class='tooltiptext' id="interactionText-2"></span>
+					</p>
+					<a class="title-link" id="title-2" target="_blank">TEST</a>
+					<br>
+					<a class="code-link" id="code-2" target="_blank">code</a>
+				</div>
 			</div>
-			<div class="info">
-				<p class="interaction" id="interaction-2">TEST</p>
-				<a class="title-link" id="title-2" target="_blank">TEST</a>
-				<br>
-				<a class="code-link" id="code-2" target="_blank">code</a>
-			</div>
-		</div>
 
-		<div class="tarot-container">
-			<div class="iframe-container">
-				<iframe id="three" src="" scrolling="no">
+			<div class="tarot-container">
+				<div class="iframe-container">
+					<iframe id="three" src="" scrolling="no">
 		</iframe>
-			</div>
-			<div class="info">
-				<p class="interaction" id="interaction-3">TEST</p>
-				<a class="title-link" id="title-3" target="_blank">TEST</a>
-				<br>
-				<a class="code-link" id="code-3" target="_blank">code</a>
-			</div>
-		</div>
-
-
-	</div>
-
-	<!-- </div> -->
-
-	<div class="bottom-container">
-		<div id="bottom">
-
-			<div id="about">
-				<h2 class="bottom-header">About</h2> This is an interactive three-card spread that pulls randomly from the 22 Major Arcana cards.
-				<br><br>
-				<b>Generative Tarot</b> was created using <a href="https://p5js.org/" target="_blank">p5.js</a> by the class of Design 2B at Rutgers Mason Gross School of the Arts.
-				<br><br>Taught by <a href="https://melanie-hoff.com/" target="_blank">Melanie Hoff</a>.
-			</div>
-
-			<!-- Design 2B - Spring 2019<br>
-	Rutgers Mason Gross School of the Arts<br>
-	Taught by <a href="www.melanie-hoff.com">Melanie Hoff</a> -->
-			<br><br>
-			<div class="students-resources">
-				<h2 class="bottom-header">Students</h2> Alexandria Eisen<br> Valerie Lozano<br> Marinelle Manansala<br> Danielle Farah<br> Kirsten Maiwaldt<br> Elyssa Feerrar<br> Jenna MacNeill<br> Fred Quayenortey<br> Yuchao Wang<br> Sheila Leonard<br> Conor Finn<br> Sherry Mi<br> Gilbert Espinoza
-				<br><br>
-				<br><br>
-				<h2 class="bottom-header">Resources</h2>
-
-
-
-				<a href="http://word-game-workshop.decontextualize.com/tarot" target="_blank"><i>Tarot as Collaborative Storytelling</i></a> by Allison Parrish<br>
-
-
-				<a href="https://marykgreer.com/2008/04/01/origins-of-divination-with-playing-cards/" target="_blank"><i>Origins of Cartomancy</i></a> by Mary K. Greer<br>
-
-
-				<a href="https://marykgreer.com/2008/10/23/three-card-spreads-the-essentials/" target="_blank"><i>Three-Card Spreads: The Essentials</i></a> by Mary K. Greer<br>
-				<br>
+				</div>
+				<div class="info">
+					<p class="interaction">
+						<span id="interaction-3"></span>
+						<span class='tooltiptext' id="interactionText-3"></span>
+					</p>
+					<a class="title-link" id="title-3" target="_blank">TEST</a>
+					<br>
+					<a class="code-link" id="code-3" target="_blank">code</a>
+				</div>
 			</div>
 
 
 		</div>
 
+		<!-- </div> -->
+
+		<div id="bottom-container">
+			<div id="bottom">
+
+				<div id="about">
+					<h2 class="bottom-header">About</h2> This is an interactive three-card spread that pulls randomly from the 22 Major Arcana cards.
+					<br><br>
+					<b>Generative Tarot</b> was created using <a href="https://p5js.org/" target="_blank">p5.js</a> by the class of Design 2B at Rutgers Mason Gross School of the Arts.
+					<br><br>Taught by <a href="https://melanie-hoff.com/" target="_blank">Melanie Hoff</a>.
+					<br><br><br>
+					<br>
+					<a class="bottom-header" id="ass" href="/project">⤞ The Class Project ⤝</a>
+				</div>
+
+
+				<br><br>
+				<div class="students-resources">
+					<h2 class="bottom-header">Students</h2> Alexandria Eisen<br> Valerie Lozano<br> Marinelle Manansala<br> Danielle Farah<br> Kirsten Maiwaldt<br> Elyssa Feerrar<br> Jenna MacNeill<br> Fred Quayenortey<br> Yuchao Wang<br> Sheila Leonard<br> Conor Finn<br> Sherry Mi<br> Gilbert Espinoza
+					<br><br>
+					<br><br>
+					<h2 class="bottom-header">Resources</h2>
+
+
+
+					<a href="http://word-game-workshop.decontextualize.com/tarot" target="_blank"><i>Tarot as Collaborative Storytelling</i></a> by Allison Parrish<br>
+
+
+					<a href="https://marykgreer.com/2008/04/01/origins-of-divination-with-playing-cards/" target="_blank"><i>Origins of Cartomancy</i></a> by Mary K. Greer<br>
+
+
+					<a href="https://marykgreer.com/2008/10/23/three-card-spreads-the-essentials/" target="_blank"><i>Three-Card Spreads: The Essentials</i></a> by Mary K. Greer<br>
+					<br>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+		</script>
+		<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
+		<script src="main.js"></script>
 	</div>
-
-
-
-	<script>
-	</script>
-	<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
-	<script src="main.js"></script>
-</div>
 </body>
 
 </html>
