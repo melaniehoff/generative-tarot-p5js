@@ -34,7 +34,7 @@ body {
   font-family: 'Avara-Bold';
   margin: 0px;
   padding: 0px;
-  height: 2990px;
+  height: 3190px;
   /* background-color: #000000; */
   background: linear-gradient(#2e2e2e, black);
   color: white;
@@ -280,7 +280,7 @@ a:hover {
     width: 903px;
   }
   body {
-    height: 4590px;
+    height: 5290px;
   }
 }
 
@@ -302,7 +302,7 @@ a:hover {
 
 @media only screen and (max-width: 921px) {
   body {
-    height: 4690px;
+    height: 5290px;
   }
   #bottom {
     width: 550px;
@@ -314,7 +314,7 @@ a:hover {
 
 @media only screen and (max-width: 435px) {
   body {
-    height: 4000px;
+    height: 4400px;
     overflow-x: hidden;
   }
   #top-buttons a {
@@ -376,6 +376,6 @@ a:hover {
     font-size: .8em;
   }
   body {
-    height: 4300px;
+    height: 4500px;
   }
 }
