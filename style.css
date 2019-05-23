@@ -307,6 +307,11 @@ a:hover {
   #bottom {
     width: 550px;
   }
+
+  #top-buttons a {
+    margin: 2em;
+    font-size: 1em;
+  }
 }
 
 
@@ -318,7 +323,7 @@ a:hover {
     overflow-x: hidden;
   }
   #top-buttons a {
-    margin: 2em;
+    margin: 1em;
   }
   #loader {
     margin-top: 2.4em;
