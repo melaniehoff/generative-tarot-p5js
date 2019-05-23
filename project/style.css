@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Steps-Mono';
+  src: url('fonts/steps-mono.otf') format('otf');
+  src: url('fonts/steps-mono.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/steps-mono-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts/steps-mono-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts/steps-mono.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Happy';
+  src: url('fonts-happy/happy-times-at-the-ikob.otf') format('otf');
+  /* IE9 Compat Modes */
+  src: url('fonts-happy/happy-times-at-the-ikob-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts-happy/Avara-Bold_web.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts-happy/Avara-Bold_web.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Avara-Bold';
+  src: url('fonts-avara/Avara-Bold_web.otf') format('otf');
+  /* IE9 Compat Modes */
+  src: url('fonts-avara/Avara-Bold_web.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts-avara/happy-times-at-the-ikob-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts-avara/happy-times-at-the-ikob.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  /* font-family: 'Steps-Mono'; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Avara-Bold';
+  background: black;
+  font-family: 'Avara-Bold';
+  margin: 0px;
+  padding: 0px;
+  height: 3000px;
+  /* background-color: #000000; */
+  background: linear-gradient(#2e2e2e, black);
+  color: white;
+  overflow-x: hidden;
+  font-size: .9em;
+}
+
+#stats {
+  color: white;
+  border: 2px solid yellow;
+  width: fit-content;
+  padding: 1em;
+  margin-left: -1em;
+  margin-top: -1em;
+}
+
+p {
+  color: white;
+  width: 80%;
+}
+
+#h1-big {
+  font-size: 3em;
+  margin-top: 1em;
+  font-weight: 400;
+  color: white;
+  margin: 2em;
+  padding-top: 0em;
+}
+
+.container {
+  /* overflow: hidden; */
+  width: 100vw;
+}
+
+#bottom-container {
+  justify-content: center;
+  display: flex;
+}
+
+#bottom {
+  position: absolute;
+  width: 903px;
+  padding-top: 0em;
+  text-align: left;
+  border-color: blue;
+  border-style: solid !important;
+  padding: 2em;
+}
+
+#loader {
+  margin-top: 6em;
+  width: 364px;
+}
+
+a {
+  color: grey;
+  text-decoration: none !important;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 0 0 15px rgba(255, 222, 0, .8), 0 0 10px rgba(255, 222, 0, .5);
+}
+
+h4 {
+  /* text-decoration: underline; */
+  margin-top: 3.5em;
+}
+
+#about {
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Times'; */
+  font-size: 1.5em;
+}
+
+.bottom-header {
+  /* font-family: 'Steps-Mono'; */
+  font-family: 'Avara-Bold';
+  margin-top: 3em;
+  border-bottom: 2px solid yellow;
+  width: fit-content;
+}
+
+#ass {
+  font-size: 1em;
+  color: white;
+  text-shadow: 0 0 15px rgba(255, 245, 0, .8), 0 0 10px rgba(255, 245, 0, .5);
+}
+
+#ass:hover {
+  color: yellow;
+  text-shadow: 0 0 15px rgba(255, 245, 0, .8), 0 0 10px rgba(255, 245, 0, .5);
+}
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+@media only screen and (max-width: 977px) {
+  #bottom {
+    width: 90%;
+  }
+}
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+@media only screen and (max-width: 435px) {
+  body {
+    font-size: .7em;
+  }
+  #bottom {
+    width: 80%;
+  }
+  #stats {
+    margin-left: 0;
+    margin-top: .2em;
+  }
+  #h1-big {
+    font-size: 3em;
+  }
+}
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+@media only screen and (max-width: 415px) {}
+
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+@media only screen and (max-width: 415px) {}
