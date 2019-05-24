@@ -34,11 +34,12 @@ body {
   font-family: 'Avara-Bold';
   margin: 0px;
   padding: 0px;
-  height: 3190px;
+  height: 100%;
   /* background-color: #000000; */
   background: linear-gradient(#2e2e2e, black);
   color: white;
   overflow-x: hidden;
+  padding-bottom: 5em;
 }
 
 #h1-big {
@@ -51,6 +52,7 @@ body {
 
 #top-buttons {
   display: none;
+  padding-bottom: .8em;
 }
 
 #top-buttons a {
@@ -58,6 +60,9 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif !important;
   font-size: 1.4em;
+  border-color: white !important;
+  border-bottom: double;
+  padding: .3em;
 }
 
 #top-buttons a:hover {
@@ -75,6 +80,8 @@ body {
   width: 100%;
   display: none;
   justify-content: center;
+  padding-bottom: 10em;
+
 }
 
 iframe {
@@ -119,6 +126,9 @@ iframe {
   display: inline;
   text-decoration: none;
   line-height: 2em;
+  border-color: white !important;
+  border-bottom: double;
+  padding: .3em;
 }
 
 .interaction {
@@ -130,22 +140,22 @@ iframe {
 }
 
 .info {
-  font-size: 1.4em;
-  padding: .5em;
+  font-size: 1.2em;
+  /* padding: .5em; */
 }
 
 #bottom-container {
   justify-content: center;
-  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
-#bottom {
-  position: absolute;
-  top: 1400px;
+#about-container {
   width: 903px;
   padding-top: 0em;
   text-align: center;
-  border-style: solid !important;
+  padding: 2em;
 }
 
 .click {
@@ -155,6 +165,7 @@ iframe {
 #loader {
   margin-top: 6em;
   width: 364px;
+  padding-bottom: 26em;
 }
 
 a {
@@ -171,22 +182,7 @@ a:hover {
   text-shadow: 0 0 15px rgba(255, 255, 255, .8), 0 0 10px rgba(255, 255, 255, .5);
 }
 
-#about {
-  /* font-family: 'Roboto Mono', monospace; */
-  font-family: 'Open Sans', sans-serif;
-  padding: 2em;
-  font-size: 1.5em;
-  margin-top: 2em;
-}
 
-.students-resources {
-  /* font-family: 'Roboto Mono', monospace; */
-  font-family: 'Open Sans', sans-serif;
-  padding: 2em;
-  padding-top: 0;
-  font-size: 1.5em;
-  margin-bottom: 2em;
-}
 
 .bottom-header {
   font-weight: 900;
@@ -222,16 +218,93 @@ a:hover {
   visibility: visible;
 }
 
-#ass {
-  font-size: 1.5em;
+
+#stats {
   color: white;
-  text-shadow: 0 0 15px rgba(255, 245, 0, .8), 0 0 10px rgba(255, 245, 0, .5);
+  border: 2px solid yellow;
+  width: fit-content;
+  padding: 1em;
+  margin-left: -1em;
+  margin-top: -1em;
+  margin-bottom: 3em;
 }
 
-#ass:hover {
-  color: yellow;
-  text-shadow: 0 0 15px rgba(255, 245, 0, .8), 0 0 10px rgba(255, 245, 0, .5);
+.p-x {
+  color: white;
+  width: 80%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
+/* #title-h2 {
+font-weight: 200;
+font-size: 3.5em;
+font-family: 'Open Sans', sans-serif;
+}
+
+#title-container {
+margin-top: 292px;
+} */
+
+#title-container-h2 {
+font-weight: 200;
+font-size: 3.5em;
+font-family: 'Open Sans', sans-serif;
+}
+
+/* #exercise-container-x {
+  text-align: left;
+width: 903px;
+} */
+
+
+/* #exercise-container-x-h2, #title-container-h2, #about-container-x-h2, {
+font-weight: 200;
+font-size: 3.5em;
+margin-bottom: 0em;
+margin-left: -.6em;
+font-family: 'Open Sans', sans-serif;
+} */
+
+
+
+#bottom-container-x {
+  justify-content: center;
+  display: flex;
+  font-family: 'Avara-Bold';
+}
+
+
+.bottom-header-x {
+  /* justify-content: center; */
+  display: flex;
+  font-family: 'Avara-Bold';
+  /* padding: 1em; */
+}
+
+
+#bottom-x {
+  /* position: absolute; */
+  width: 903px;
+  padding-top: 0em;
+  text-align: left;
+  border-color: blue;
+  border-style: solid !important;
+  padding: 2em;
+}
+
+#about-x {
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Times'; */
+  font-size: 1.5em;
+}
+
+/* .name {
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+} */
+
 
 
 
@@ -274,14 +347,20 @@ a:hover {
     margin: auto;
     justify-content: center !important;
   }
-  #bottom {
-    position: absolute;
+  #about-container{
+    /* position: absolute; */
     top: 3000px;
-    width: 903px;
+    width: 503px;
   }
-  body {
-    height: 5290px;
+
+  #bottom-x{
+    width: 503px;
   }
+
+  #exercise-container-x-h2, #title-container-h2 {
+    margin-left: 3em;
+}
+
 }
 
 
@@ -292,36 +371,33 @@ a:hover {
     overflow-x: hidden;
     width: 100vw;
   }
-  #bottom {
-    width: 703px;
+  #about-container, #bottom-x {
+    width: 556px;
   }
-}
 
-
-/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
-
-@media only screen and (max-width: 921px) {
-  body {
-    height: 5290px;
+  #exercise-container-x-h2 {
+    margin-left: 1.2em;
   }
-  #bottom {
-    width: 550px;
-  }
+
 
   #top-buttons a {
     margin: 2em;
     font-size: 1em;
   }
+
+
 }
+
+/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+
+
 
 
 /* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
 
 @media only screen and (max-width: 435px) {
-  body {
-    height: 4400px;
-    overflow-x: hidden;
-  }
+
+
   #top-buttons a {
     margin: 1em;
   }
@@ -329,14 +405,7 @@ a:hover {
     margin-top: 2.4em;
     width: 300px;
   }
-  #bottom {
-    top: 2500px;
-  }
-  #bottom a {
-    color: white;
-    text-decoration: underline !important;
-    text-shadow: 0 0 15px rgba(255, 255, 255, .8), 0 0 10px rgba(255, 255, 255, .5);
-  }
+
   #top-buttons a {
     margin: 1.5em;
     text-decoration: none !important;
@@ -352,9 +421,15 @@ a:hover {
 /* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
 
 @media only screen and (max-width: 415px) {
-  #bottom {
-    width: 350px;
-    font-size: .8em;
+
+
+  #about-container, #bottom-x {
+    width: 300px;
+    font-size: .6em;
+  }
+
+  #exercise-container-x-h2 {
+    margin-left: .6em;
   }
   h1 {
     font-size: 2em;
@@ -370,17 +445,52 @@ a:hover {
     text-align: center;
     width: 320px;
   }
+
+
+
+
+}
+
+/*********INFO********** */
+
+
+
+.info-container {
+  font-family: 'Open Sans', sans-serif;
+  width: 70vw;
+  font-size: 1.5em;
+  margin-top: 7em;
+}
+
+@media only screen and (max-width: 921px) {
+  .info-container {
+    width: 80vw;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .info-container {
+    width: 90vw;
+    font-size: 0.9em;
+  }
 }
 
 
-/* }}}}}}}}{}{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+.info-title {
+  font-family: 'Avara-Bold';
+  font-size: 1.5em;
+}
 
-@media only screen and (max-width: 415px) {
-  #bottom {
-    width: 300px;
-    font-size: .8em;
-  }
-  body {
-    height: 4500px;
-  }
+.info-content {
+  border-color: blue;
+  border-style: solid !important;
+  padding: 2em;
+}
+
+.info-note {
+  width: fit-content;
+  border: 2px solid yellow;
+  padding: 1em;
+  margin: -1em 0em 1em -1em;
 }
